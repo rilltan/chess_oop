@@ -14,6 +14,6 @@
  * limitations under the License.
  */
 
-package uk.ac.cam.tsg36.chess;
+package uk.ac.cam.rdw48.chess;
 
 public class IllegalMoveException extends RuntimeException {}

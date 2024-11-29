@@ -14,9 +14,18 @@
  * limitations under the License.
  */
 
-package uk.ac.cam.tsg36.chess;
+package uk.ac.cam.rdw48.chess;
 
-public enum PieceColor {
-  BLACK,
-  WHITE
+public class Main {
+
+  public static void main(String[] args) {
+    Board board = new Board();
+    board.printBoard();
+    board.runRandomGame();
+
+    while (!board.resultedInCheckmate()) {
+      board = new Board();
+      board.runRandomGame();
+    }
+  }
 }

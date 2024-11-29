@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package uk.ac.cam.tsg36.chess;
+package uk.ac.cam.rdw48.chess;
 
 import java.util.List;
 import java.util.Objects;

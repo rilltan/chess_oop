@@ -14,18 +14,10 @@
  * limitations under the License.
  */
 
-package uk.ac.cam.tsg36.chess;
+package uk.ac.cam.rdw48.chess;
 
-public class Main {
-
-  public static void main(String[] args) {
-    Board board = new Board();
-    board.printBoard();
-    board.runRandomGame();
-
-    while (!board.resultedInCheckmate()) {
-      board = new Board();
-      board.runRandomGame();
-    }
+public class InvalidPositionException extends Exception {
+  public InvalidPositionException(int rank, int file) {
+    super("invalid position: " + ('a' + file - 1) + rank);
   }
 }

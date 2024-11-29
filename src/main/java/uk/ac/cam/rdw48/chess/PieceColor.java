@@ -14,10 +14,9 @@
  * limitations under the License.
  */
 
-package uk.ac.cam.tsg36.chess;
+package uk.ac.cam.rdw48.chess;
 
-public class InvalidPositionException extends Exception {
-  public InvalidPositionException(int rank, int file) {
-    super("invalid position: " + ('a' + file - 1) + rank);
-  }
+public enum PieceColor {
+  BLACK,
+  WHITE
 }
